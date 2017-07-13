@@ -1,0 +1,19 @@
+{
+  "name": "grouping_checkboxes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getsetbro/grouping_checkboxes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getsetbro/grouping_checkboxes/issues"
+  },
+  "homepage": "https://github.com/getsetbro/grouping_checkboxes#readme"
+}

@@ -1,33 +1,53 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>_</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<header>
-    <nav class="container">brand</nav>
-</header>
-<main>
-    <hr>
-    <section class="container">
-        <h2>Admin</h2>
-        <fieldset>
-            <legend>Admin</legend>
-            <ul>
-                <li>item</li>
-            </ul>
-        </fieldset>
-    </section>
-    <hr>
-</main>
-<footer>
-    <section class="container">
-        -
-    </section>
-</footer>
+    <header>
+        <nav class="container">APP</nav>
+    </header>
+    <main id="app">
+        <section class="container">
+            <hr>
+            <div class="card">
+                <div class="card-header" v-on:click="group1click"><input type="checkbox" v-model="group1"/><label>Group 1</label></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" v-on:click="p1 = !p1"><input type="checkbox" v-model="p1"/><label>P1</label></li>
+                    <li class="list-group-item" v-on:click="p2 = !p2"><input type="checkbox" v-model="p2"/><label>P2</label></li>
+                    <li class="list-group-item" v-on:click="p3 = !p3"><input type="checkbox" v-model="p3"/><label>P3</label></li>
+                </ul>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header" v-on:click="group2click"><input type="checkbox" v-model="group2"/><label>Group 2</label></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" v-on:click="p4 = !p4"><input type="checkbox" v-model="p4"/><label>P4</label></li>
+                    <li class="list-group-item" v-on:click="p5 = !p5"><input type="checkbox" v-model="p5"/><label>P5</label></li>
+                    <li class="list-group-item" v-on:click="p6 = !p6"><input type="checkbox" v-model="p6"/><label>P6</label></li>
+                </ul>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-header" v-on:click="group3click"><input type="checkbox" v-model="group3"/><label>Group 3</label></div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" v-on:click="p7 = !p7"><input type="checkbox" v-model="p7"/><label>P7</label></li>
+                    <li class="list-group-item" v-on:click="p8 = !p7"><input type="checkbox" v-model="p8"/><label>P8</label></li>
+                </ul>
+            </div>
+            <br>
+            <hr>
+        </section>
+        </footer>
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
